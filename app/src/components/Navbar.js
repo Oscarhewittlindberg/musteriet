@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { Menu, Segment } from 'semantic-ui-react'
+import { Menu, Image } from 'semantic-ui-react'
 import MustningPage from '../pages/MustningPage'
 import OmMustetPage from '../pages/OmMustetPage'
 import KontaktPage from '../pages/KontaktPage'
+import logo from '../mustlogga.png'; 
 
 export default class MenuNavbar extends Component {
   state = { activeItem: 'mustning' }
@@ -30,7 +31,7 @@ export default class MenuNavbar extends Component {
     return (
       <div  style={{ display: 'flex' }}>
         <Menu text vertical style={{ flex: '1' }}>
-          <Menu.Item header>Lidingö Musteri</Menu.Item>
+          <Menu.Item header><Image  centered alt="logo" src={logo} size='small'/></Menu.Item>
           <Menu.Item
             name='mustning'
             active={activeItem === 'mustning'}
