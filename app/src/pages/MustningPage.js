@@ -1,29 +1,31 @@
 import React from 'react'
-import { Grid, Header } from 'semantic-ui-react'
+import { Grid, Placeholder } from 'semantic-ui-react'
+import BokningDivider from '../components/mustning/BokningDivider'
 
-const MustningPage = () => (
-  <Grid divided='vertically'>
-    <Grid.Row columns={2}>
-      <Grid.Column>
-        
-      </Grid.Column>
-      <Grid.Column>
-        <Header>Hej</Header>
-      </Grid.Column>
+const MustningPage = () => {
+  return ( 
+  <Grid divided='vertically' relaxed='very'>
+    <Grid.Row centered>
+      Nyheter
+      <Placeholder>
+        <Placeholder.Line length='full' />
+        <Placeholder.Line length='very long' />
+        <Placeholder.Line length='long' />
+        <Placeholder.Line length='medium' />
+        <Placeholder.Line length='short' />
+        <Placeholder.Line length='very short' />
+      </Placeholder>
+      
     </Grid.Row>
 
-    <Grid.Row columns={3}>
-      <Grid.Column>
-        hej
-      </Grid.Column>
-      <Grid.Column>
-        hej
-      </Grid.Column>
-      <Grid.Column>
-        hej
-      </Grid.Column>
-    </Grid.Row>
-  </Grid>
+  <Grid.Row columns={20}>
+    <Grid.Column>
+
+    </Grid.Column>
+
+  </Grid.Row>
+</Grid> 
 )
+}
 
 export default MustningPage

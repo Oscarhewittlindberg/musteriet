@@ -1,29 +1,19 @@
 import React from 'react'
-import { Grid, Header } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
+import MapComponent from '../components/om/Map'
 
-const OmMustetPage = () => (
+const OmMustetPage   = () => {
+  
+  return ( 
   <Grid divided='vertically'>
-    <Grid.Row columns={2}>
-      <Grid.Column>
-        
-      </Grid.Column>
-      <Grid.Column>
-        <Header>Om</Header>
-      </Grid.Column>
-    </Grid.Row>
+  <Grid.Row >
+    Lidingö Musteri
+    <MapComponent/>
 
-    <Grid.Row columns={3}>
-      <Grid.Column>
-        hej
-      </Grid.Column>
-      <Grid.Column>
-        hej
-      </Grid.Column>
-      <Grid.Column>
-        hej
-      </Grid.Column>
-    </Grid.Row>
-  </Grid>
+  </Grid.Row>
+</Grid> 
 )
+}
+
 
 export default OmMustetPage
